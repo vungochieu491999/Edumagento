@@ -3,4 +3,6 @@
     <type name="Magento\Catalog\Model\Product">
         <plugin name="edumagento_helloworld_update_product_name" type="Edumagento\HelloWorld\Plugin\UpdateProductName" sortOrder="1" disabled="false"/>
     </type>
+
+    <preference for="Edumagento\HelloWorld\Api\TestInterface" type="Edumagento\HelloWorld\Model\Api\Post"/>
 </config>
