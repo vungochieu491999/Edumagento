@@ -5,7 +5,7 @@
     </head>
     <body>
         <referenceContainer name="content">
-            <block class="Edumagento\HelloWorld\Block\Index" name="helloworld_index" template="helloworld.phtml" />
+            <block class="Edumagento\HelloWorld\Block\Index" name="frontend_helloworld_index" template="Edumagento_HelloWorld::helloworld.phtml" />
         </referenceContainer>
     </body>
 </page>
