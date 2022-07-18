@@ -1,9 +1,10 @@
 <?php
 namespace Edumagento\HelloWorld\Model;
 
+use Edumagento\HelloWorld\Api\TestInterface;
 use Magento\Framework\Model\AbstractModel;
 
-class Post extends AbstractModel
+class Post extends AbstractModel implements TestInterface
 {
     const CACHE_TAG = 'edumagento_helloworld_post';
 
@@ -15,4 +16,10 @@ class Post extends AbstractModel
     {
         $this->_init('Edumagento\HelloWorld\Model\ResourceModel\Post');
     }
+
+    public function getPost($params)
+    {
+        // TODO: Implement getPost() method.
+    }
+
 }
