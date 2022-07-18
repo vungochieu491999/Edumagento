@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Edumagento_HelloWorld::menu" title="Edumagento Custom Menu" module="Edumagento_HelloWorld" sortOrder="10" resource="Edumagento_HelloWorld::menu"/>
+        <add id="Edumagento_HelloWorld::index" title="Index" module="Edumagento_HelloWorld" sortOrder="10" parent="Edumagento_HelloWorld::menu" action="adminhtml_helloworld/post/index" resource="Edumagento_HelloWorld::index"/>
+    </menu>
+</config>

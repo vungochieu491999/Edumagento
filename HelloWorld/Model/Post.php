@@ -1,10 +1,9 @@
 <?php
 namespace Edumagento\HelloWorld\Model;
 
-use Magento\Framework\DataObject\IdentityInterface;
 use Magento\Framework\Model\AbstractModel;
 
-class Post extends AbstractModel implements IdentityInterface
+class Post extends AbstractModel
 {
     const CACHE_TAG = 'edumagento_helloworld_post';
 
@@ -15,17 +14,5 @@ class Post extends AbstractModel implements IdentityInterface
     protected function _construct()
     {
         $this->_init('Edumagento\HelloWorld\Model\ResourceModel\Post');
-    }
-
-    public function getIdentities()
-    {
-        return [self::CACHE_TAG . '_' . $this->getId()];
-    }
-
-    public function getDefaultValues()
-    {
-        $values = [];
-
-        return $values;
     }
 }

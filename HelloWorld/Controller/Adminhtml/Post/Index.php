@@ -7,6 +7,9 @@ use Magento\Backend\App\Action;
 
 class Index extends \Magento\Backend\App\Action
 {
+
+    const ADMIN_RESOURCE = "Edumagento_HelloWorld::index";
+
     protected $_pageFactory;
 
     public function __construct(Action\Context $context, PageFactory $pageFactory)
