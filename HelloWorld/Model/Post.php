@@ -21,4 +21,5 @@ class Post extends AbstractModel implements TestInterface
     {
         // TODO: Implement getPost() method.
     }
+
 }
